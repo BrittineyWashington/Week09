@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+</head>
+<!-- pt-2 pb-2 fs-1 -->
+<body class="bg-primary">
+    <div id="main-container" class="container pt-2 pb-2 fs-1 bg-gradient-warning text-center text-dark bg-danger">Brittiney Washington's Contact Information</div>
+<!-- mt-2 mb-2 p-3 pb-3 fs-3-->
+    <nav class="navbar navbar-expand-sm bg-info">
+        <div class="container-fluid">
+            <a class="navbar brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- this is the code for the table -->
+<div class="table-responsive m-3 table-group-divider">
+    <table class="table table-lg table-hover table-group-divider">
+        <thead class="bg-light">
+            <tr class="table table-active table-group-divider">
+                <th scope="col" class="col-2 text-center">#</th>
+                <th scope="col" class="col-3 text-center">Site</th>
+                <th scope="col" class="col-8 text-center">Address</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr class="table table-active table-bordered border-dark">
+                <th scope="row bg-danger text-center">1</th>
+                <td class="bg-danger text-center">LinkedIn</td>
+                <td class="bg-light text-center"><a href="https://www.linkedin.com/in/brittiney-washington-frontenddevlp/">https://www.linkedin.com/in/brittiney-washington-frontenddevlp/</a></td>
+            </div>
+            </tr>
+            <tr class="table table-active table-bordered border-dark">
+                <th scope="row bg-primary text-center">2</th>
+                <td class="bg-primary text-center">GitHub</td>
+                <td class="bg-seconday text-center"><a href="https://github.com/BrittineyWashington">https://github.com/BrittineyWashington</td>
+            </tr>
+            <tr class="table table-active table-bordered border-dark">
+                <th scope="row bg-warning text-center">3</th>
+                <td class="bg-warning text-center">Prentus</td>
+                <td class="bg-seconday text-center"><a href="https://promineotech.prentus.co/p/brittiney-washington">https://promineotech.prentus.co/p/brittiney-washington</td>
+            </tr>
+            <tr class="table table-active table-bordered border-dark">
+                <th scope="row bg-secondary text-center">4</th>
+                <td class="bg-secondary text-center">Email</td>
+                <td class="bg-seconday text-center"><a href="Brittiney.Washington84@gmail.com">Brittiney.Washington84@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- this is the code for the ordered list of Meet Up Groups -->
+<div class="container-fluid">
+    <h3 class="text-center text-danger p-2 bg-info">Meet Up Groups</h3>
+    <div class="col-lg">
+    <ol class="text-center">
+        <li class="text-center bg-info"><a href="https://www.meetup.com/kentucky-javascript-users-group/" alt="This will be a link to this meetup group">KY JavaScript Users Group</a></li> <br>
+        <li class="text-center bg-info"><a href="https://www.meetup.com/JUGGLou/" alt="This will be a link to this meetup group">Java Users Group of Greater Louisville</a></li> <br>
+        <li class="text-center bg-info"><a href="https://www.meetup.com/people-of-color-code/" alt="This will be a link to this meetup group">People of Color Code</a></li> <br>
+        <li class="text-center bg-info"><a href="https://www.meetup.com/derbypy/" alt="This will be a link to this meetup group">DerbyPy- Louisville Python Meetup</a></li> <br>
+        <li class="text-center bg-info"><a href="https://www.meetup.com/jslouky/" alt="This will be a link to this meetup group">JSLou- Louisville's JavaScript Group</a></li> <br>
+    </ol>
+</div>
+<!-- Meet Up Groups that I'm involved in 
+1. KY JavaScript Users Group https://www.meetup.com/kentucky-javascript-users-group/
+2. Java Users Group of Greater Louisville https://www.meetup.com/JUGGLou/
+3. People of Color Code https://www.meetup.com/people-of-color-code/
+4. DerbyPy- Louisville Python Meetup https://www.meetup.com/derbypy/
+5. JSLou- Louisville's JavaScript Group https://www.meetup.com/jslouky/
+ -->
+
+<!--row-no-gutters trying to see what this does, didn't see any changes-->
+
+<!-- This is the code for the form -->
+<div class="container-fluid ">
+<form class="p-3">
+    <!-- This is how you can center: d-flex justify-content-center -->
+    <h3 class="bg-danger text-dark text-center">Leave a Comment</h3>
+    <div class="form-row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First Name">
+        </div>
+            <div class="col-form-label-lg bg-info p-1">
+                <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+            <div class="col-form-label-lg bg-info p-1">
+                <input type="text" class="form-control" placeholder="Email Address">
+        </div>
+            <div class="col-form-label-lg bg-info p-1">
+                <label for="textarea"></label>
+                    <textarea class="form-control" placeholder="Comment here..." id="textarea" rows="6"></textarea>
+                <button name="button" type="button" class="bg-danger">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+<footer class="text-center text-white mb-4">Brittiney Washington ©️2023</footer>
+</body>
+</html>
