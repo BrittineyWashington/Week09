@@ -12,7 +12,7 @@
 <body class="bg-primary">
     <div id="main-container" class="container pt-2 pb-2 fs-1 bg-gradient-warning text-center text-dark bg-danger">Brittiney Washington's Contact Information</div>
 <!-- mt-2 mb-2 p-3 pb-3 fs-3-->
-<nav class="navbar navbar-expand-lg bg-primary">
+<nav class="navbar navbar-expand-lg bg-info">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,13 +21,13 @@
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-info" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active text-danger" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-info" href="resources.html">Resources</a>
+            <a class="nav-link text-danger" href="resources.html">Resources</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-info" href="contact.html">Contact</a>
+            <a class="nav-link text-danger" href="contact.html">Contact</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -40,10 +40,10 @@
 
 <!-- this is the code for the table -->
 <div class="table-responsive m-3 table-group-divider">
-    <table class="table table-lg table-hover table-group-divider">
+    <table class="table table-sm table-hover table-group-divider">
         <thead class="bg-light">
             <tr class="table table-active table-group-divider">
-                <th scope="col" class="col-2 text-center">#</th>
+                <th scope="col" class="col-2">#</th>
                 <th scope="col" class="col-3 text-center">Site</th>
                 <th scope="col" class="col-8 text-center">Address</th>
             </tr>
@@ -76,14 +76,14 @@
 
 <!-- this is the code for the ordered list of Meet Up Groups -->
 <div class="container-fluid">
-    <h3 class="text-center text-danger p-2 bg-info">Meet Up Groups</h3>
-    <div class="col-lg">
+    <h3 class="text-center text-dark p-2 bg-info">Meet Up Groups</h3>
+    <div class="col-sm">
     <ol class="text-center">
-        <li class="text-center bg-info"><a href="https://www.meetup.com/kentucky-javascript-users-group/" alt="This will be a link to this meetup group">KY JavaScript Users Group</a></li> <br>
-        <li class="text-center bg-info"><a href="https://www.meetup.com/JUGGLou/" alt="This will be a link to this meetup group">Java Users Group of Greater Louisville</a></li> <br>
-        <li class="text-center bg-info"><a href="https://www.meetup.com/people-of-color-code/" alt="This will be a link to this meetup group">People of Color Code</a></li> <br>
-        <li class="text-center bg-info"><a href="https://www.meetup.com/derbypy/" alt="This will be a link to this meetup group">DerbyPy- Louisville Python Meetup</a></li> <br>
-        <li class="text-center bg-info"><a href="https://www.meetup.com/jslouky/" alt="This will be a link to this meetup group">JSLou- Louisville's JavaScript Group</a></li> <br>
+        <li class="text-center bg-danger py-2 text-dark fs-md"><a class="text-dark" href="https://www.meetup.com/kentucky-javascript-users-group/" alt="This will be a link to this meetup group">KY JavaScript Users Group</a></li> <br>
+        <li class="text-center bg-light py-2"><a class="text-dark"href="https://www.meetup.com/JUGGLou/" alt="This will be a link to this meetup group">Java Users Group of Greater Louisville</a></li> <br>
+        <li class="text-center bg-dark py-2"><a class="text-light" href="https://www.meetup.com/people-of-color-code/" alt="This will be a link to this meetup group">People of Color Code</a></li> <br>
+        <li class="text-center bg-warning py-2"><a class="text-dark" href="https://www.meetup.com/derbypy/" alt="This will be a link to this meetup group">DerbyPy- Louisville Python Meetup</a></li> <br>
+        <li class="text-center bg-success py-2"><a class="text-dark" href="https://www.meetup.com/jslouky/" alt="This will be a link to this meetup group">JSLou- Louisville's JavaScript Group</a></li> <br>
     </ol>
 </div>
 <!-- Meet Up Groups that I'm involved in 
@@ -102,16 +102,16 @@
     <!-- This is how you can center: d-flex justify-content-center -->
     <h3 class="bg-danger text-dark text-center">Leave a Comment</h3>
     <div class="form-row">
-        <div class="col">
+        <div class="col-form-label-sm bg-info">
             <input type="text" class="form-control" placeholder="First Name">
         </div>
-            <div class="col-form-label-lg bg-info p-1">
+            <div class="col-form-label-sm bg-info">
                 <input type="text" class="form-control" placeholder="Last Name">
         </div>
-            <div class="col-form-label-lg bg-info p-1">
+            <div class="col-form-label-sm bg-info p-1">
                 <input type="text" class="form-control" placeholder="Email Address">
         </div>
-            <div class="col-form-label-lg bg-info p-1">
+            <div class="col-form-label-sm bg-info p-1">
                 <label for="textarea"></label>
                     <textarea class="form-control" placeholder="Comment here..." id="textarea" rows="6"></textarea>
                 <button name="button" type="button" class="bg-danger">Submit</button>
@@ -120,6 +120,9 @@
     </div>
 </form>
 </div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 <footer class="text-center text-white mb-4">Brittiney Washington ©️2023</footer>
 </body>
