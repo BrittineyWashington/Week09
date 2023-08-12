@@ -16,38 +16,44 @@ Website Design Tips: not too many choices, scroll not that many clicks
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 09 Project</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"
-    />
+    />  
 </head>
 <!--pt-2 pb-2 fs-1 -->
 <body class="bg-danger">
     <div id="main-container" class="container pt-2 pb-2 fs-1 bg-info text-center">Brittiney Washington</div>
     <!-- mt-2 mb-2 p-3 pb-3 fs-3 -->
-<nav class="navbar navbar-expand-lg bg-primary">
-    <div class="container-fluid">
-        <a class="navbar brand bg-dark text-white" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="resources.html">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-info" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="resources.html">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="contact.html">Contact</a>
+              </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
+
 
 <!-- how do I get the right side padding to match or center the image -->
-<div id="container-fluid" class="container px-3 py-3 bg-dark">
+<div id="container-fluid" class="container text-center bg-dark pb-5">
     <div>
-<img src="my work image 2021.jpeg" class="img-fluid mx-auto my-auto text-center" alt="This is my work picture from 2021." width="600px"></div>
+<img src="workimage2021.jpeg" class="img-fluid text-bottom text-white" alt="This is my work picture from 2021." width="600px">Work Image</div>
 </div>
 </div> <br>
 
@@ -56,7 +62,7 @@ Website Design Tips: not too many choices, scroll not that many clicks
 <div id="main-container" class="container bg-light p-3 text-center">
 <p class="bg-primary p-2 fs-md text-overflow">
 <h4>About Me</h4>
-After receiving my master’s in counseling psychology (2014), I provided mental/behavioral health services to various populations, ranging from early childhood to adult. These services covered individual, family, group, prevention & crisis treatments in a variety of settings, utilizing a collection of modalities to best serve those populations. Recently, I have taken a sabbatical so that I may pursue an opportunity to increase my problem-solving skills in a different way, that is through becoming a frontend software developer. <br><br>
+After receiving my masters in counseling psychology (2014), I provided mental/behavioral health services to various populations, ranging from early childhood to adult. These services covered individual, family, group, prevention & crisis treatments in a variety of settings, utilizing a collection of modalities to best serve those populations. Recently, I have taken a sabbatical so that I may pursue an opportunity to increase my problem-solving skills in a different way, that is through becoming a frontend software developer. <br><br>
 
 For as long as I can remember, I have loved solving all sorts of puzzles, from word searches to complex logic games. Because of this love for problem-solving, I have been able to accomplish many achievements that have helped me to become the successful person I am today. I am constantly challenging myself to learn new skills and ways to be of help to others. <br><br>
 
@@ -64,8 +70,12 @@ In my spare time I enjoy photography, watching AEW, sewing, playing all sorts of
 </p>
 </div>
 
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 
 <!-- added a footer to help practice branding/copyrighting -->
-<footer class="text-center text-white mb-4">Brittiney Washington ©️2023</footer>
+<footer class="text-center text-white mb-5">Brittiney Washington ©️2023</footer>
+
 </body>
 </html>
